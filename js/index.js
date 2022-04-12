@@ -1,4 +1,5 @@
 import slideMenu from "./burgerMenu.js";
+import renderVideo from "./renderVideo.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -9,8 +10,5 @@ document.addEventListener("DOMContentLoaded", () => {
     closeTrigger: ".navigation__link , .navigation__close"
   });
 
+  renderVideo()
 });
-
-/**
- * fa12ae0ede0cc30bc0a03b2a29f4c1a7
- */
