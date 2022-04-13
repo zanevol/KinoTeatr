@@ -5,7 +5,7 @@ const filmWeek = document.querySelector(".film-week");
 
 const firstRender = data => {
   filmWeek.insertAdjacentHTML("beforeend", `
-     <div class="container film-week__container" data-rating="${data.vote_average}">
+     <div class="container film-week__container" data-rating="${data.vote_average === 0 ? '-' : data.vote_average}">
         <div class="film-week__poster-wrapper">
             <img class="film-week__poster" src="https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces${data.backdrop_path}" alt="постер ${data.title || data.name}">
             <p class="film-week__title_origin">${data.original_title || data.original_name}</p>
