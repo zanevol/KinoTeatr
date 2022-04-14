@@ -1,6 +1,7 @@
 import slideMenu from "./burgerMenu.js";
 import renderVideo from "./renderVideo.js";
 import menuLink from "./menuLink.js";
+import search from "./search.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     classActiveMenu: "navigation_active",
     closeTrigger: ".navigation__link , .navigation__close",
   });
-  menuLink();
   renderVideo();
+  menuLink();
+  search()
 });

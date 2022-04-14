@@ -4,14 +4,13 @@
 
 .other-films__title {
     max-width: 1330px;
-    margin: 0 auto;
     font-family: Raleway, sans-serif;
     font-weight: 800;
     font-size: 120px;
     line-height: 130%;
     text-transform: uppercase;
     opacity: 0.1;
-    margin-bottom: 60px;
+    margin: 0 auto 60px;
 }
 
 .other-films__title-add {
@@ -36,7 +35,7 @@
 
 .other-films__img {
     border-radius: 10px;
-    box-shadow: 0px 0px 10px var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
     transition: box-shadow 0.2s;
 }
 
@@ -104,16 +103,16 @@
 }
 
 .other-films__link:hover .other-films__img {
-    box-shadow: 0px 0px 3px 5px var(--color-primary);
+    box-shadow: 0 0 3px 5px var(--color-primary);
 }
 
 .other-films__link[href]:hover .other-films__img {
-    box-shadow: 0px 0px 7px 10px #FF0335;
+    box-shadow: 0 0 7px 10px #FF0335;
 }
 
 .other-films__link:focus .other-films__img,
 .other-films__link:active .other-films__img {
-    box-shadow: 0px 0px 20px 10px var(--color-primary);
+    box-shadow: 0 0 20px 10px var(--color-primary);
 }
 
 .other-films__btn {
@@ -132,14 +131,18 @@
 }
 
 .other-films__btn:hover {
-    box-shadow: 0px 0px 10px 5px var(--color-primary);
+    box-shadow: 0 0 10px 5px var(--color-primary);
 }
 
 .other-films__btn:focus,
 .other-films__btn:active {
-    box-shadow: 0px 0px 10px var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
 }
 
+.no-poster > .other-films__link > img {
+    width: 367.5px;
+    height: 551.25px;
+}
 
 
 @media (max-width: 1366px) {
@@ -160,9 +163,9 @@
         opacity: 1;
     }
 
-    .other-films__list  {
+    .other-films__list {
         grid-template-columns: repeat(auto-fit, minmax(100px, calc(100% * 4 / 12 - 15px)));
-gap: 30px 20px;
+        gap: 30px 20px;
         margin-bottom: 90px;
     }
 
@@ -173,10 +176,11 @@ gap: 30px 20px;
 
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .other-films {
         padding: 30px 0;
     }
+
     .other-films__title {
         max-width: none;
         font-size: 40px;
@@ -187,7 +191,7 @@ gap: 30px 20px;
         display: inline;
     }
 
-    .other-films__list  {
+    .other-films__list {
         grid-template-columns: repeat(auto-fit, minmax(100px, calc(100% * 6 / 12 - 15px)));
 
     }
@@ -195,13 +199,13 @@ gap: 30px 20px;
 
 @media (max-width: 480px) {
     .other-films__link:after {
-     
-     
+
+
         top: 10px;
         right: 10px;
     }
 
-    .other-films__list  {
+    .other-films__list {
         grid-template-columns: 100%;
 
     }
@@ -210,7 +214,7 @@ gap: 30px 20px;
         font-size: 28px;
     }
 
-    .other-films__list  {
+    .other-films__list {
         margin-bottom: 60px;
     }
 }
